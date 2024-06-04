@@ -1,31 +1,54 @@
-# paystreet
+# PayStreet
 
-A new Flutter project.
+This is a Flutter project 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+To get started with this project, you'll need to have the following installed:
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Android Studio](https://developer.android.com/studio) or [Xcode](https://developer.apple.com/xcode/) (depending on your target platform)
 
-## Assets
+Once you have the necessary tools installed, follow these steps to build and run the application:
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+1. Clone the repository:
+2. Change to the project directory:
+3. Install the project dependencies: flutter pub get
+4. Connect a device or start an emulator/simulator. You can do this by running one of the following commands:
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
+- Android:
+  ```
+  flutter emulator
+  ```
+  or
+  ```
+  flutter devices
+  ```
+  and then
+  ```
+  flutter run
+  ```
+- iOS:
+  ```
+  open -a Simulator
+  ```
+  or
+  ```
+  flutter devices
+  ```
+  and then
+  ```
+  flutter run
+  ```
 
-## Localization
+5. Once the app is installed and running, you should see the initial screen of the application.
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+## Building for Release
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
-# paystreet
+To build a release version of your app, follow these steps:
+
+1. Ensure that you have a valid signing certificate and keystore file. If you don't have one, you can create a new one using the instructions in the [Flutter documentation](https://flutter.dev/docs/deployment/android#signing-the-app).
+
+2. Update the `signing.properties` file in the `android/app` directory with your signing information.
+
+3. Run the following command to build the release version of your app:# paystreet
